@@ -1,0 +1,277 @@
+@import "_all-page.scss";
+
+#main {
+    .block1 {
+        padding-bottom : $a20;
+        .container {
+            .main_p {
+                font-family: 'GothamProLight';
+                font-style: normal;
+                font-weight: 300;
+                font-size: $a20;
+                line-height: 99.7%;
+                color: #000000;
+                margin: $a30 0;
+                .db {
+                    display: none;
+                }
+            }
+            .wrapper {
+                margin-top : $a66;
+                display: flex;
+                justify-content: space-between;
+                .item {
+                    width : $a367;
+                    position: relative;
+                    .brd {
+                        position: absolute;
+                        bottom : $a70;
+                        right : -$a5;
+                        width: $a3;
+                        height: $a55;
+                        background: #0096FF;
+                    }
+                    .box_dashed {
+                        left : $a167;
+                        width: $a68;
+                        top : $a70;
+                        height: $a51;
+                        position: absolute;
+                        border: $a3 dashed #434242;
+                        border-left-color: transparent;
+                        border-bottom-color: transparent;
+                    }
+                    .circle {
+                        position: relative;
+                        width: $a141;
+                        height: $a141;
+                        background: linear-gradient(180deg, #FF7A00 0%, #FF9432 58.17%);
+                        box-shadow: 0 $a10 $a35 #FF881B;
+                        border-radius: 50%;
+                        .implant, .implant1, .implant2, .implant3, .implant4, .implant5  {
+                            position: absolute;
+                            display: flex;
+                            align-items: flex-end;
+                            bottom : $a31;
+                            left : $a36;
+                            img {
+                                width : $a112;
+                            }
+                        }
+                        .implant1 {
+                            img {
+                                width : $a131;
+                            }
+                        }
+                        .implant2 {
+                            left : $a20;
+                            bottom : -$a10;
+                            img {
+                                width : $a170;
+                            }
+                        }
+                        .implant3 {
+                            left : $a51;
+                            bottom : $a47;
+                            img {
+                                width : $a90;
+                            }
+                        }
+                        .implant4 {
+                            left : $a52;
+                            bottom : $a47;
+                            img {
+                                width : $a100;
+                            }
+                        }
+                        .implant5 {
+                            left : $a51;
+                            bottom : $a47;
+                            img {
+                                width : $a89;
+                            }
+                        }
+                    }
+                    .circle1 {
+                        background: #fff;
+                        box-shadow: 0 $a10 $a35 #B3ACAD;
+                    }
+                    h5 {
+                        margin: $a30 0 $a15;
+                    }
+                    .text {
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: $a15;
+                        line-height: 120%;
+                        color: #434242;
+                    }
+                }
+            }
+            .title {
+                font-family: GothamProBold;
+                text-transform : uppercase;
+                font-style: normal;
+                font-weight : 900;
+                font-size: $a40;
+                line-height: 99.7%;
+                color: #434242;
+                margin-top : $a45;
+                margin-bottom : $a25;
+                display: flex;
+            }
+        }
+    }
+    .block2 {
+        padding-bottom : $a65;
+        position: relative;
+        .box_wrap {
+            bottom : 0;
+            right : $a342;
+            z-index : -1;
+            position: absolute;
+            width: $a718;
+            height: $a308;
+            background: linear-gradient(358.54deg, #FFFFFF 4.43%, rgba(255, 255, 255, 0) 97.28%);
+        }
+        .girl1 {
+            z-index : -2;
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            right : $a380;
+            bottom : 0;
+            img {
+                width : $a674;
+            }
+        }
+        .block_title {
+            margin-bottom : $a70;
+        }
+        .container {
+            z-index : 2;
+            .item  {
+                margin-top : $a13;
+                display: flex;
+                align-items: center;
+                .number {
+                    margin-right : $a14;
+                    font-family: GothamProBold;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: $a50;
+                    line-height: 99.7%;
+                    color: rgba(67, 66, 66, 0.72);
+                }
+                .description {
+                    font-family: GothamProLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: $a20;
+                    line-height: 99.7%;
+                    color: #434242;
+                }
+            }
+            .brd {
+                margin-top : $a22;
+                margin-bottom : $a30;
+                width: $a74;
+                height: $a5;
+                background: rgba(67, 66, 66, 0.49);
+            }
+        }
+    }
+    .block3 {
+        padding-bottom : $a80;
+        .container {
+            h4 {
+                margin-top : $a65;
+                margin-bottom : $a80;
+            }
+            .wrapper {
+                align-items: center;
+                display: flex;
+                //justify-content : space-between;
+                .map {
+                    margin-right : $a25;
+                    box-shadow: 0 $a4 $a20 rgba(0, 0, 0, 0.33);
+                    display: flex;
+                    align-items : flex-end;
+                    img {
+                        width : $a665;
+                    }
+                }
+                .right_block {
+                    p {
+                        margin-left : $a50;
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: $a20;
+                        line-height: 99.7%;
+                        color: #434242;
+                        margin-bottom : $a24;
+                        position : relative;
+                        span {
+                            font-family: GothamProLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: $a15;
+                            line-height: 66.2%;
+                            color: #434242;
+                        }
+                        &:before {
+                            left : -$a45;
+                            top : 50%;
+                            position: absolute;
+                            content: "";
+                            width: $a28;
+                            height: 2px;
+                            background: #0096FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .block4 {
+        padding-bottom : $a30;
+        .block_title {
+            margin-bottom : $a39;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: 'GothamProMedium';
+                font-style: normal;
+                //font-weight: bold;
+                font-size: $a20;
+                line-height: $a35;
+                text-align: center;
+                color: #434242;
+                margin-bottom : $a85;
+            }
+            .fortuna {
+                position: relative;
+                display: flex;
+                justify-content : center;
+                align-items : center;
+                img {
+                    display: flex;
+                    width : $a558;
+                }
+                .twist {
+                    background: none;
+                    border: none;
+                    position: absolute;
+                    img {
+                        width : $a171;
+                    }
+                }
+            }
+        }
+    }
+}

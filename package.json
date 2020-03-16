@@ -1,0 +1,43 @@
+{
+  "name": "yudgin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "21dsf:dsf/dsf"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-dependents": "^1.2.3",
+    "gulp-image": "^5.0.0",
+    "gulp-json-replace": "^1.0.9",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-responsive": "^2.14.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tap": "^2.0.0",
+    "gulp-translate": "^1.5.8",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-webp": "^4.0.1",
+    "sharp": "^0.22.1"
+  },
+  "dependencies": {},
+  "description": ""
+}

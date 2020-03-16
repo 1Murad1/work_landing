@@ -1,0 +1,650 @@
+@import "_pxTOvw.scss";
+
+$osn-col:  #FF7A00;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $osn-col;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $osn-col;
+}
+
+input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: transparent;
+
+}
+input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: transparent;
+}
+input:focus:-moz-placeholder { /* Firefox 18- */
+  color: transparent;
+}
+
+a, a:focus, button, button:focus, input, input:focus, textarea, textarea:focus {
+  outline: 0 !important;
+}
+
+:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+select, select:focus {
+  outline: 0 !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+p {
+  line-height: 100%;
+  white-space: pre-line;
+  font-size: $a20;
+}
+
+a:focus, a:hover {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: $a18;
+
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transition-delay: .5s;
+}
+
+input[type="tel"], input[type="text"] {
+  color: rgba(0, 0, 0, .9);
+  border-radius: $a27;
+  font-family: GothamProLight;
+  text-align: center;
+  line-height : 99.7%;
+  height: $a55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  font-size: $a20;
+  border: 1px solid $osn-col;
+  cursor: pointer;
+  width: $a390;
+  padding: 0 $a24;
+}
+
+.button {
+  border-radius: $a27;
+  padding: 0 $a24;
+  font-family: GothamProLight;
+  text-transform : uppercase;
+  line-height : 99.7%;
+  height: $a55;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #FF7A00 0%, #FEA453 100%), #FF7A00;
+  box-shadow: 0 $a10 $a30 #FE9B41;
+  font-size: $a20;
+  border: 1px solid $osn-col;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.5s all;
+  width: $a390;
+  &:hover {
+    background: #fff;
+    color: rgba(0, 0, 0, .9);
+  }
+  &.small {
+    padding: 0 $a10;
+    height: $a36;
+    font-size: $a14;
+    img , svg{
+      height: $a16;
+      margin-right: $a6;
+      transition: all 0.5s;
+    }
+    &:hover {
+      color: #000;
+      img, svg {
+        filter: invert(1);
+      }
+    }
+  }
+  &.white {
+    border-color: #fff;
+    background: transparent;
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+#header {
+  padding-bottom: $a160;
+  //height : 85vh;
+  position: relative;
+  .banner {
+    position: absolute;
+    top : 0;
+    z-index : 1;
+    img {
+      width : 100%;
+    }
+  }
+  .girl {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right : $a30;
+    bottom : 0;
+    img {
+      width : $a935;
+    }
+  }
+  .img_abs1, .img_abs2 {
+    display: none;
+  }
+  .container {
+    position: relative;
+    z-index : 2;
+    padding-top : $a40;
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content : space-between;
+      .logo {
+        img  {
+          width : $a240;
+        }
+      }
+      .right_text {
+        display: flex;
+        align-items: center;
+        p {
+          font-style: normal;
+          font-weight: 300;
+          font-size: $a20;
+          line-height: $a19;
+          color: #434242;
+          font-family: GothamProLight;
+          margin-right : $a5;
+        }
+        .phone {
+          display: flex;
+          align-items: center;
+          padding: $a15 $a30;
+          border-radius: $a18;
+          border: 1px solid #434242;
+          a {
+            font-family: GothamProLight;
+            color: #434242;
+            font-style: normal;
+            font-weight: 300;
+            font-size: $a20;
+            line-height: $a19;
+          }
+        }
+      }
+    }
+
+
+    h3 {
+      margin-top : $a86;
+      margin-bottom : $a25;
+    }
+    p {
+      font-family: GothamProLight;
+      font-style: normal;
+      font-weight: 300;
+      font-size: $a25;
+      line-height: $a24;
+      color: #434242;
+    }
+    p > a {
+      font-size: $a25;
+      line-height: $a24;
+      font-family: GothamProLight;
+    }
+    .tt {
+      margin: $a40 0;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      .name {
+        margin-top : $a45;
+      }
+      .phone {
+        margin: $a30 0;
+      }
+    }
+  }
+}
+
+.block_title {
+  width : 100%;
+  height: $a74;
+  background: #FF7A00;
+  display: flex;
+  align-items: center;
+}
+
+#footer {
+  overflow: hidden;
+   height: $a878;
+    position: relative;
+    .banner {
+        z-index : -1;
+        position: absolute;
+        width : 100%;
+        top : 0;
+        display: flex;
+        align-items : flex-end;
+        background: #FFFFFF;
+        opacity: 0.5;
+    }
+    .box_wrap {
+      bottom : 0;
+      position: absolute;
+      //visibility: hidden;
+      width: 100%;
+      height: $a639;
+      background: linear-gradient(0deg, #FFFFFF 13.08%, rgba(255, 255, 255, 0) 78.83%);
+    }
+    .container {
+      height : 100%;
+      position: relative;
+        z-index : 1;
+        padding-top : $a114;
+      .girl3 {
+        z-index : -1;
+        position: absolute;
+        right : $a60;
+        top : $a145;
+        img {
+          width : $a552;
+        }
+      }
+        h3 {
+            margin-bottom : $a60;
+        }
+        .txt {
+            font-family: 'AvenirNextCyrHeavy';
+            font-style: normal;
+            font-weight: 900;
+            font-size: $a24;
+            line-height: 99.7%;
+            text-transform: uppercase;
+            color: #434242;
+            margin-bottom : $a80;
+        }
+        .form {
+            margin-bottom : $a99;
+            .phone, .name {
+                border: 1px solid rgba(164, 31, 53, 0.5);
+                color: #fff;
+                background: rgba(0, 0, 0, 0.2);
+            }
+            .phone {
+                margin: $a25 0;
+            }
+        }
+        .form1 {
+            input::-webkit-input-placeholder {
+              color: #fff;
+            }
+            input:focus::-webkit-input-placeholder {
+              color: transparent;
+            }
+        }
+        .brd {
+            height : 1px;
+            width : 100%;
+            margin-bottom : $a55;
+            background: #434242;
+        }
+      .wrapper {
+        align-items: center;
+        display: flex;
+        justify-content : space-between;
+        .text {
+          display: flex;
+          flex-direction: column;
+          a, .tx {
+            margin-bottom : $a10;
+            font-family: GothamProLight;
+            font-style: normal;
+            font-weight: 300;
+            font-size: $a15;
+            line-height: 99.7%;
+            text-align: center;
+            color: #434242;
+            text-decoration: underline;
+            &:last-child {
+              text-decoration : none;
+            }
+          }
+          .tx {
+            text-align : right;
+            //margin-bottom : 0;
+            line-height: $a20;
+          }
+        }
+      }
+    }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background: #fff;
+  font-size: $a18;
+  .off {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width : $a1160;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: AvenirNextCyrHeavy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: $a45;
+  line-height: 99.7%;
+  color: #FFFFFF;
+
+}
+
+h3 {
+  font-family: 'AvenirNextCyrHeavy';
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: 800;
+  font-size: $a36;
+  line-height: $a44;
+  text-transform: uppercase;
+  color: #434242;
+}
+
+h4 {
+  font-family: GothamProBold;
+  font-style: normal;
+  font-weight: 900;
+  font-size: $a30;
+  line-height: 99.7%;
+  color: #FF7A00;
+}
+
+h5 {
+  font-family: GothamProBold;
+  font-style: normal;
+  font-weight: 900;
+  font-size: $a20;
+  line-height: 99.7%;
+  color: #FF7A00;
+  white-space: pre-line;
+}
+
+.color {
+  color: #FF7A00;
+}
+
+button {
+  cursor: pointer;
+  &:active {
+    box-shadow: inset 0 5px 10px 0 rgba(0,0,0,0.5) !important;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+  main {
+    overflow: hidden;
+  }
+
+  //h1 {
+  //  font-size: $m30 !important;
+  //  line-height: $m35 !important;
+  //  margin-bottom: $m15 !important;
+  //}
+
+  h2 {
+    text-align: center !important;
+    line-height: normal;
+    padding-left: $m5 !important;
+    font-size: $m20 !important;
+    white-space: normal !important;
+    margin: $m10 auto !important;
+    width: 80%;
+  }
+
+  h3 {
+    font-size: $m18 !important;
+    padding-bottom: $m18 !important;
+    white-space: normal;
+    line-height: normal;
+  }
+
+  h4 {
+    text-align: left !important;
+    line-height: normal;
+    padding-left: $m5 !important;
+    font-size: $m18 !important;
+    white-space: normal !important;
+    margin: $m10 auto !important;
+    width: fit-content;
+  }
+
+
+  h5 {
+    text-align: left !important;
+    line-height: normal;
+    padding-left: $m5 !important;
+    font-size: $m18 !important;
+    white-space: normal !important;
+    margin: $m10 auto !important;
+    width: fit-content;
+  }
+
+  p {
+    font-size: $m12 !important;
+    white-space: normal !important;
+    text-align: left !important;
+    line-height: $m20 !important;
+    hyphens: auto;
+    padding-right: $m30 !important;
+  }
+
+  .container {
+    width: 92% !important;
+  }
+
+  #header {
+    position: relative;
+    .img_abs1 {
+      display: block;
+      position: absolute;
+      img {
+        width: $m320;
+      }
+    }
+    .img_abs2 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: flex-end;
+      //right: -$m40;
+      right: 0;
+      img {
+        width: $m260;
+      }
+    }
+    .banner, .girl {
+      display: none;
+    }
+
+    .container {
+      padding-bottom: $m70;
+      padding-top: $m35;
+      .title {
+        flex-direction: column;
+        .logo {
+          margin-bottom: $m27;
+          img {
+            width: $m240;
+          }
+        }
+        .right_text {
+          margin-bottom: $m55;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          p {
+            display: none;
+          }
+          .phone {
+            display: flex;
+            justify-content: center;
+            width: $m231;
+            height: $m34;
+            border-radius: $m28;
+            a {
+              font-size: $m18;
+            }
+          }
+        }
+      }
+      h3 {
+        width: 90%;
+        margin: 0 0 $m23 0 !important;
+        padding: 0 !important;
+      }
+      .nn {
+        display: none;
+      }
+      p {
+        font-size: $m13 !important;
+        padding: 0 !important;
+        margin: 0 0 $m10 0 !important;
+        a {
+          font-size: $m13;
+        }
+      }
+      .tt {
+        font-size: $m12 !important;
+        text-transform: uppercase;
+      }
+      .form {
+        input, .button {
+          border-radius: $m28;
+          width: $m200;
+          height: $m35;
+        }
+        input {
+          font-size: $m15;
+        }
+        .phone {
+          margin: $m19 0;
+        }
+      }
+    }
+  }
+  .block_title {
+    height: auto;
+  }
+  #footer {
+
+  }
+
+  .button {
+    font-size: $m16;
+    //height: $m40;
+    padding: 0 $m20;
+    border-radius: $m28;
+    &.small {
+      font-size: $m14;
+      height: $m30;
+      padding: 0 $m10;
+    }
+  }
+
+  #main {
+    .block1 {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main_p {
+          white-space: normal !important;
+          margin: $m50 0 0 0 !important;
+          padding: 0 !important;
+          text-align: center !important;
+          width: 95%;
+          font-size: $m15 !important;
+          .dn {
+            display: none;
+          }
+          .db {
+           display: inline-block !important;
+          }
+        }
+        .wrapper {
+          width: 100%;
+          flex-direction: column;
+          .item {
+            width: 100% !important;
+            .box_dashed {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

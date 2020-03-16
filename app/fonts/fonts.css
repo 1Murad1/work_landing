@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'GothamProBold';
+    src: url('Gotham/GothamPro-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamProLight';
+    src: url('Gotham/GothamPro-Light.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamProMedium';
+    src: url('Gotham/GothamPro-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pobedaRegular1.ttf';
+    src: url('Gotham/pobeda-regular1.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'signpainterHousecasual.ttf';
+    src: url('Gotham/signpainter-housecasual.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrBold';
+    src: url('AvenirNextCyr/AvenirNextCyr-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrBoldItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-BoldItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrDemi';
+    src: url('AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrDemiItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-DemiItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrHeavy';
+    src: url('AvenirNextCyr/AvenirNextCyr-Heavy.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrHeavyItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-HeavyItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-Italic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrLight';
+    src: url('AvenirNextCyr/AvenirNextCyr-Light.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrLightItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-LightItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrMedium';
+    src: url('AvenirNextCyr/AvenirNextCyr-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrMediumItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-MediumItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrRegular';
+    src: url('AvenirNextCyr/AvenirNextCyr-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrThin';
+    src: url('AvenirNextCyr/AvenirNextCyr-Thin.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrThinItalic';
+    src: url('AvenirNextCyr/AvenirNextCyr-ThinItalic.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrUltraLight';
+    src: url('AvenirNextCyr/AvenirNextCyr-UltraLight.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyrUltraIt';
+    src: url('AvenirNextCyr/AvenirNextCyr-UltraLightIt.ttf');
+    font-style: normal;
+}
