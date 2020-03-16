@@ -311,3 +311,194 @@
         }
     }
 }
+
+@media screen and (max-width: 1023px) {
+  #main {
+    .block1 {
+      padding-bottom: $m25;
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main_p {
+          white-space: normal !important;
+          margin: $m50 0 0 0 !important;
+          padding: 0 !important;
+          text-align: center !important;
+          width: 95%;
+          font-size: $m15 !important;
+          .dn {
+            display: none;
+          }
+          .db {
+            display: inline-block !important;
+          }
+        }
+        .wrapper {
+          justify-content: center;
+          width: 100%;
+          flex-direction: column;
+          .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .box_dashed {
+              display: none;
+            }
+            .brd {
+              display: none;
+            }
+            .circle {
+              margin: $m30 0 $m40;
+              width: $m80;
+              height: $m80;
+              box-shadow: 0 $m10 $m35 #FF7A00;
+              .implant, .implant1, .implant2 {
+                img {
+                  width: $m80;
+                }
+              }
+              .implant {
+                 bottom: $m11;
+                 left: $m23;
+               }
+              .implant1 {
+                bottom: $m18;
+                left: $m20;
+              }
+              .implant2 {
+                bottom: $m6;
+                left: $m9;
+              }
+              .implant4, .implant5, .implant3 {
+                img {
+                  width: $m50 !important;
+                }
+              }
+              .implant4 {
+                bottom: $m25;
+                left: $m28
+              }
+              .implant5 {
+                bottom: $m26;
+                left: $m29;
+              }
+              .implant3 {
+                bottom: $m26;
+                left: $m29;
+              }
+            }
+            .circle1 {
+              box-shadow: 0 $m10 $m35 #B3ACAD;
+            }
+            h5 {
+              margin: 0 !important;
+              padding: 0 !important;
+
+            }
+            .text {
+              padding: 0 !important;
+              text-align: center !important;
+              margin-top: $m12;
+              font-size: $m15 !important;
+            }
+          }
+        }
+        .title {
+          margin: $m40 0 0 0;
+          font-size: $m20;
+          text-align: center;
+        }
+      }
+    }
+    .block2 {
+      padding-bottom: $m22;
+      .box_wrap, .girl1 {
+        display: none;
+      }
+      .container {
+        .brd {
+          display: none;
+        }
+        .item {
+          align-items: flex-end;
+          margin-top: $m15;
+          .description {
+            padding: 0 !important;
+            font-size: $m15 !important;
+          }
+          .number {
+            margin-right: $m14;
+            font-size: $m50;
+          }
+        }
+      }
+    }
+    .block3 {
+      padding-bottom: 0;
+      .container {
+        h4 {
+          display: none;
+        }
+        .wrapper {
+          flex-flow: column-reverse;
+          .right_block {
+            margin-top: $m20;
+            margin-bottom: $m10;
+            p {
+              line-height: $m30 !important;
+              font-size: $m20 !important;
+              margin: 0 0 $m10 0 !important;
+              padding-left: $m25 !important;
+              padding-right: 0 !important;
+              span {
+                font-size: $m15;
+                display: block;
+              }
+              .dnn {
+                display: none;
+              }
+            }
+            p:before {
+              width: $m20;
+            }
+          }
+          .map {
+            width: $m320;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .block4 {
+      .container {
+        h2 {
+          padding: $m15 0 !important;
+        }
+        p {
+          width: 90%;
+          font-size: $m15;
+          text-align: center !important;
+          padding: 0 !important;
+          margin: $m23 0 $m44;
+        }
+        .fortuna {
+          margin-bottom: $m80;
+          width: $m300;
+          img {
+            width: 90%;
+          }
+          .twist {
+            width: $m97;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
