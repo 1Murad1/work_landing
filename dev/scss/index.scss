@@ -198,11 +198,27 @@
                     box-shadow: 0 $a4 $a20 rgba(0, 0, 0, 0.33);
                     display: flex;
                     align-items : flex-end;
-                    img {
-                        width : $a665;
+                    width: $a665;
+                    height: $a539;
+                    padding: $a20;
+                    #map {
+                        width: 100%;
+                        height: 100%;
                     }
                 }
                 .right_block {
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom : $a24;
+                        justify-content: space-between;
+                        a {
+                            font-family: GothamProLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: $a18;
+                        }
+                    }
                     p {
                         margin-left : $a50;
                         font-family: GothamProLight;
@@ -211,8 +227,11 @@
                         font-size: $a20;
                         line-height: 99.7%;
                         color: #434242;
-                        margin-bottom : $a24;
                         position : relative;
+                        border-right: 1px solid #ccc;
+                        padding-right: $a20;
+                        margin-right: $a20;
+                        width: $a230;
                         span {
                             font-family: GothamProLight;
                             font-style: normal;
@@ -259,14 +278,31 @@
                 display: flex;
                 justify-content : center;
                 align-items : center;
-                img {
+                &:before {
+                    border-top: $a40 solid #fff;
+                    position: absolute;
+                    content: '';
+                    top: $a25;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    border-left: $a20 solid transparent;
+                    border-right: $a20 solid transparent;
+                    z-index: 1;
+                    width: 0;
+                }
+                #fortuna {
                     display: flex;
                     width : $a558;
+                    transition: all 5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                    box-shadow: 0 0 $a10 $a30 rgba(0,0,0,.5);
+                    border-radius: 50%;
                 }
                 .twist {
                     background: none;
                     border: none;
                     position: absolute;
+                    border-radius: 50%;
                     img {
                         width : $a171;
                     }
