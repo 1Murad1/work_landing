@@ -278,6 +278,7 @@
                 display: flex;
                 justify-content : center;
                 align-items : center;
+              margin-bottom: $a40;
                 &:before {
                     border-top: $a40 solid #fff;
                     position: absolute;
@@ -444,14 +445,18 @@
         .wrapper {
           flex-flow: column-reverse;
           .right_block {
+            padding-left: $m40;
+            width: 100%;
             margin-top: $m20;
             margin-bottom: $m10;
             p {
+              width: 100%;
               line-height: $m30 !important;
               font-size: $m20 !important;
               margin: 0 0 $m10 0 !important;
               padding-left: $m25 !important;
               padding-right: 0 !important;
+              border-right: none;
               span {
                 font-size: $m15;
                 display: block;
@@ -460,11 +465,16 @@
                 display: none;
               }
             }
+            a {
+              display: none;
+            }
             p:before {
               width: $m20;
             }
           }
           .map {
+            margin: 0;
+            height: $m380;
             width: $m320;
             img {
               width: 100%;
@@ -486,10 +496,10 @@
           margin: $m23 0 $m44;
         }
         .fortuna {
-          margin-bottom: $m80;
+          margin-bottom: $m50;
           width: $m300;
           img {
-            width: 90%;
+            width: 90% !important;
           }
           .twist {
             width: $m97;
