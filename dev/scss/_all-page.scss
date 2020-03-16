@@ -471,21 +471,20 @@ button {
   }
 
   h4 {
-    text-align: left !important;
+    text-align: center !important;
     line-height: normal;
-    padding-left: $m5 !important;
     font-size: $m18 !important;
     white-space: normal !important;
-    margin: $m10 auto !important;
+    margin: $m28 0 0 0  !important;
     width: fit-content;
   }
 
 
   h5 {
-    text-align: left !important;
+    text-align: center !important;
     line-height: normal;
     padding-left: $m5 !important;
-    font-size: $m18 !important;
+    font-size: $m20 !important;
     white-space: normal !important;
     margin: $m10 auto !important;
     width: fit-content;
@@ -599,7 +598,18 @@ button {
     height: auto;
   }
   #footer {
-
+    height: auto;
+    .container {
+      padding: 0;
+      .girl3 {
+        display: none;
+      }
+      h3 {
+        text-align: center !important;
+        padding: 0 !important;
+        margin: $m27 0 0 !important;
+      }
+    }
   }
 
   .button {
@@ -611,40 +621,6 @@ button {
       font-size: $m14;
       height: $m30;
       padding: 0 $m10;
-    }
-  }
-
-  #main {
-    .block1 {
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .main_p {
-          white-space: normal !important;
-          margin: $m50 0 0 0 !important;
-          padding: 0 !important;
-          text-align: center !important;
-          width: 95%;
-          font-size: $m15 !important;
-          .dn {
-            display: none;
-          }
-          .db {
-           display: inline-block !important;
-          }
-        }
-        .wrapper {
-          width: 100%;
-          flex-direction: column;
-          .item {
-            width: 100% !important;
-            .box_dashed {
-              display: none;
-            }
-          }
-        }
-      }
     }
   }
 }
