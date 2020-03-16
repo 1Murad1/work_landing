@@ -1,4 +1,5 @@
 @import "_pxTOvw.scss";
+@import "animate";
 
 $osn-col:  #FF7A00;
 
@@ -98,7 +99,7 @@ input[type="tel"], input[type="text"] {
   background: none;
   font-size: $a20;
   border: 1px solid $osn-col;
-  cursor: pointer;
+  cursor: text;
   width: $a390;
   padding: 0 $a24;
 }
