@@ -70,6 +70,10 @@ ul {
   padding: 0;
 }
 
+label {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -677,6 +681,19 @@ button {
       font-size: $m14;
       height: $m30;
       padding: 0 $m10;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    .container {
+      .wrapper {
+        .logo {
+          margin-top: $m20;
+          margin-bottom: $m5;
+        }
+      }
     }
   }
 }
