@@ -211,7 +211,8 @@
             //= include/footer.html
             <script src="js/libs.min.js"></script>
             <script src="js/main.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdXRbyeV0met71bXTHrfGP9TebJxhdBDo&callback=initMap" async defer></script>
+            <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdXRbyeV0met71bXTHrfGP9TebJxhdBDo&callback=initMap" async defer></script>-->
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=8cd2d961-6766-425d-a608-bd50bd4f5702&lang=ru_RU" type="text/javascript" async defer></script>
             <script type="text/javascript">
                 $.mask.definitions['x'] = "[0-9]";
                 $.mask.definitions['9'] = 9;
@@ -224,51 +225,65 @@
                 function circleRun() {
                     document.querySelector('#fortuna').style.transform = 'rotate('+ randomInteger(500, 10000) +'deg)'
                 }
-                function initMap() {
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 4,
-                        center: new google.maps.LatLng(48.379433, 31.1655799),
+                // function initMap() {
+                //     var map = new google.maps.Map(document.getElementById('map'), {
+                //         zoom: 4,
+                //         center: new google.maps.LatLng(48.379433, 31.1655799),
+                //     });
+                //     if ($(window).width() < 1201) {
+                //         var map = new google.maps.Map(document.getElementById('map'), {
+                //             zoom: 4,
+                //             center: new google.maps.LatLng(48.379433, 31.1655799),
+                //         });
+                //     }
+                //     var styledMapType=new google.maps.StyledMapType();
+                //     map.mapTypes.set('styled_map',styledMapType);
+                //     map.setMapTypeId('styled_map');
+                //     var locations = [
+                //         ['м. Беговая\n' +
+                //         'Хорошёвское шоссе, 48, 7 +7 (999) 777 77 77', 44.948036, 34.095159, 4],
+                //         ['м. Проспект Мира\n' +
+                //         'Проспект Мира, 53 +7 (999) 777 77 77', 51.7672799, 18.0853462, 5],
+                //         ['м. Раменки\n' +
+                //         'улица Столетова, 11 +7 (999) 777 77 77', 51.3053701, 6.2829948, 3],
+                //         ['м. Академическая\n' +
+                //         'ул. Винокурова, 2, +7 (999) 777 77 77', 55.777866, 37.672701, 2],
+                //     ];
+                //     var infowindow = new google.maps.InfoWindow();
+                //     var marker, i;
+                //     for (i = 0; i < locations.length; i++) {
+                //         marker = new google.maps.Marker({
+                //             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                //             map: map,
+                //             icon: "img/map/marker.png",
+                //         });
+                //         google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                //             return function() {
+                //                 infowindow.setContent(locations[i][0]);
+                //                 infowindow.open(map, marker);
+                //             }
+                //         })(marker, i));
+                //         google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                //             return function() {
+                //                 infowindow.setContent(locations[i][0]);
+                //                 infowindow.open(map, marker);
+                //             }
+                //         })(marker, i));
+                //     }
+                // }
+                ymaps.ready(init);
+                function init(){
+                    // Создание карты.
+                    var myMap = new ymaps.Map("map", {
+                        // Координаты центра карты.
+                        // Порядок по умолчанию: «широта, долгота».
+                        // Чтобы не определять координаты центра карты вручную,
+                        // воспользуйтесь инструментом Определение координат.
+                        center: [55.76, 37.64],
+                        // Уровень масштабирования. Допустимые значения:
+                        // от 0 (весь мир) до 19.
+                        zoom: 7
                     });
-                    if ($(window).width() < 1201) {
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 4,
-                            center: new google.maps.LatLng(48.379433, 31.1655799),
-                        });
-                    }
-                    var styledMapType=new google.maps.StyledMapType();
-                    map.mapTypes.set('styled_map',styledMapType);
-                    map.setMapTypeId('styled_map');
-                    var locations = [
-                        ['м. Беговая\n' +
-                        'Хорошёвское шоссе, 48, 7 +7 (999) 777 77 77', 44.948036, 34.095159, 4],
-                        ['м. Проспект Мира\n' +
-                        'Проспект Мира, 53 +7 (999) 777 77 77', 51.7672799, 18.0853462, 5],
-                        ['м. Раменки\n' +
-                        'улица Столетова, 11 +7 (999) 777 77 77', 51.3053701, 6.2829948, 3],
-                        ['м. Академическая\n' +
-                        'ул. Винокурова, 2, +7 (999) 777 77 77', 55.777866, 37.672701, 2],
-                    ];
-                    var infowindow = new google.maps.InfoWindow();
-                    var marker, i;
-                    for (i = 0; i < locations.length; i++) {
-                        marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                            map: map,
-                            icon: "img/map/marker.png",
-                        });
-                        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
-                            return function() {
-                                infowindow.setContent(locations[i][0]);
-                                infowindow.open(map, marker);
-                            }
-                        })(marker, i));
-                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                            return function() {
-                                infowindow.setContent(locations[i][0]);
-                                infowindow.open(map, marker);
-                            }
-                        })(marker, i));
-                    }
                 }
             </script>
         </body>
